@@ -20,7 +20,7 @@ const TestimonialSlider = () => {
         <Slider {...settings}>
             <div>
                 <p className='review__text'>
-                    lorem
+                    Every dish is prepared with precision and care. The freshness and quality of ingredients shine through in every bite
                 </p>
                 <div className='slider__content d-flex align-items-center gap-3'>
                     <img src={ava01} className=' rounded' />
@@ -29,7 +29,7 @@ const TestimonialSlider = () => {
             </div>
             <div>
                 <p className='review__text'>
-                    lorem
+                    The staff at Delicious Bites are welcoming and attentive. Our server, Sarah, made our dining experience truly memorable.
                 </p>
                 <div className='slider__content d-flex align-items-center gap-3'>
                     <img src={ava02} className=' rounded' />
@@ -38,7 +38,7 @@ const TestimonialSlider = () => {
             </div>
             <div>
                 <p className='review__text'>
-                    lorem
+                    The service was quick, and the staff was knowledgeable about the menu. They even accommodated my dietary restrictions with a smile.
                 </p>
                 <div className='slider__content d-flex align-items-center gap-3'>
                     <img src={ava03} className=' rounded' />
@@ -47,8 +47,7 @@ const TestimonialSlider = () => {
             </div>
             <div>
                 <p className='review__text'>
-                    lorem
-                </p>
+                    The restaurant's ambiance is cozy and romantic, making it perfect for a special date night.                </p>
                 <div className=' slider__content d-flex align-items-center gap-3'>
                     <img src={ava04} className=' rounded' />
                     <h6>john deo</h6>

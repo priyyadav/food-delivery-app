@@ -178,35 +178,35 @@ const Home = () => {
                         <Col lg='6' md='6'>
                             <div className="why__tasty-treat">
                                 <h2 className="tasty__treat_title mb-4"> why <span>tasty treat?</span></h2>
-                                <p className="tasty__treat_desc">lorem50
+                                <p className="tasty__treat_desc">At Tasty Treat, we offer a wide range of snacks and treats that cater to a diverse palate. Our product lineup includes:
 
                                     <ListGroup className="mt-5">
-                                        <ListGroupItem className="border-0 ps-0"><p className="d-flex align-items-center gap-2">
-                                            <i class="ri-checkbox-circle-line"></i> fresh and tasty food</p>
+                                        <ListGroupItem className="border-0 ps-0"><p className=" choose__us-title d-flex align-items-center gap-2">
+                                            <i class="ri-checkbox-circle-line"></i> Sweet Delights</p>
                                             <p className="choose__us-desc">
-                                                tasty food
+                                                Dive into our world of sweet indulgence with a variety of cookies, cakes, and confectionery that are perfect for satisfying your sweet cravings
                                             </p></ListGroupItem>
                                     </ListGroup>
 
                                     <ListGroup>
                                         <ListGroupItem className="border-0 ps-0"><p className=" choose__us-title d-flex align-items-center gap-2">
-                                            <i class="ri-checkbox-circle-line"></i> fresh and tasty food</p>
+                                            <i class="ri-checkbox-circle-line"></i> Fresh and tasty food</p>
                                             <p className="choose__us-desc">
-                                                tasty food
+                                                Tasty Treat is your passport to a world of flavor, excitement, and mouthwatering indulgence
                                             </p></ListGroupItem>
                                     </ListGroup>
                                     <ListGroup>
                                         <ListGroupItem className="border-0 ps-0"><p className=" choose__us-title d-flex align-items-center gap-2">
-                                            <i class="ri-checkbox-circle-line"></i> fresh and tasty food</p>
+                                            <i class="ri-checkbox-circle-line"></i> Quality Assurance</p>
                                             <p className="choose__us-desc">
-                                                tasty food
+                                                We believe that great taste begins with exceptional ingredients.
                                             </p></ListGroupItem>
                                     </ListGroup>
                                     <ListGroup>
                                         <ListGroupItem className="border-0 ps-0"><p className=" choose__us-title d-flex align-items-center gap-2">
-                                            <i class="ri-checkbox-circle-line"></i> fresh and tasty food</p>
+                                            <i class="ri-checkbox-circle-line"></i> For Every Occasion</p>
                                             <p className="choose__us-desc">
-                                                tasty food
+                                                Tasty Treat snacks are perfect for a wide range of occasions, whether you're hosting a party, snacking at work, or enjoying a movie night at home
                                             </p></ListGroupItem>
                                     </ListGroup>
                                 </p>
@@ -240,7 +240,7 @@ const Home = () => {
                                 <h2 className="testimonial__title">
                                     what our <span>customer</span> are saying
                                 </h2>
-                                <p className="testimonial-desc">lorem50</p>
+                                <p className="testimonial-desc">The food at Delicious Bites is an explosion of flavors! I tried the spicy shrimp pasta, and it was absolutely divine.</p>
                                 <TestimonialSlider></TestimonialSlider>
                             </div>
                         </Col>
