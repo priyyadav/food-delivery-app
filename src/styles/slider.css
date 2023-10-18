@@ -1,0 +1,12 @@
+.review__text {
+    color: #777;
+    line-height: 30px;
+    margin: 30px 0px;
+}
+
+.slider__content img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}

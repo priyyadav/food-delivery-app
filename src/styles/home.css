@@ -1,0 +1,95 @@
+.feature__subtitle {
+    color: #df2020;
+}
+
+.feature__title span {
+    color: #df2020;
+}
+
+.feature__item p {
+    color: #777;
+}
+
+.food__category {
+    background: #df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+.food__category button {
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    color: #fff;
+}
+
+.food__category button img {
+    width: 20px;
+    height: 20px;
+}
+
+.foodBtnActive {
+    background: #fff !important;
+    border-radius: 5px;
+    color: #df2020 !important;
+
+}
+
+.tasty__treat_title span {
+    color: #df2020;
+}
+
+.tasty__treat-desc {
+    color: #777;
+    line-height: 28px;
+}
+
+.choose__us-title {
+    font-weight: 600;
+}
+
+.choose__us-title i {
+    font-weight: 500 !important;
+    color: #df2020;
+}
+
+.choose__us-desc {
+    color: #777;
+}
+
+.testimonial__subtitle {
+
+    color: #df2020;
+}
+
+.testimonial__title span {
+    color: #df2020;
+}
+
+.testimonial-desc {
+    color: #777;
+    line-height: 28px;
+}
+
+@media screen and (max-width:576px) {
+
+    .hero__content {
+        font-size: 1rem;
+
+    }
+
+    .hero__content p {
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+
+    ;
+
+    .hero__title {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+}
