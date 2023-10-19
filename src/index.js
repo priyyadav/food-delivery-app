@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <BrowserRouter>
+    <BrowserRouter basename='/food-delivery-app'>
       <Provider store={store}>
         <App />
       </Provider>
