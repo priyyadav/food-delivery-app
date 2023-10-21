@@ -10,7 +10,7 @@ import "../styles/home.css"
 import featureImg01 from '../assets/images/service-01.png'
 import featureImg02 from '../assets/images/service-02.png'
 import featureImg03 from '../assets/images/service-03.png'
-import product from '../assets/fake-data/products.js'
+import products from '../assets/fake-data/products.js'
 import foodCategoryImg01 from '../assets/images/hamburger.png'
 import foodCategoryImg02 from '../assets/images/pizza.png'
 import foodCategoryImg03 from '../assets/images/bread.png'
@@ -38,32 +38,48 @@ const featureData = [
     }
 ]
 const Home = () => {
-    const [category, setCategory] = useState('All')
-    const [products, setProducts] = useState(product);
+    const [category, setCategory] = useState("All");
+    const [allProducts, setAllProducts] = useState(products);
+
     const [hotPizza, setHotPizza] = useState([]);
+
     useEffect(() => {
         const filteredproducts = products.filter((item) => item.category === 'Pizza')
         const slicepizza = filteredproducts.slice(0, 4)
         setHotPizza(slicepizza)
 
     }, [])
+
+
     useEffect(() => {
-        if (category === 'All') {
-            setProducts(products)
+        if (category === "ALL") {
+            setAllProducts(products);
         }
-        if (category === 'BURGER') {
-            const filteredproducts = products.filter((item) => item.category === 'Burger')
-            setProducts(filteredproducts)
+
+        if (category === "BURGER") {
+            const filteredProducts = products.filter(
+                (item) => item.category === "Burger"
+            );
+
+            setAllProducts(filteredProducts);
         }
-        if (category === 'BREAD') {
-            const filteredproducts = products.filter((item) => item.category === 'Bread')
-            setProducts(filteredproducts)
+
+        if (category === "PIZZA") {
+            const filteredProducts = products.filter(
+                (item) => item.category === "Pizza"
+            );
+
+            setAllProducts(filteredProducts);
         }
-        if (category === 'PIZZA') {
-            const filteredproducts = products.filter((item) => item.category === 'Pizza')
-            setProducts(filteredproducts)
+
+        if (category === "BREAD") {
+            const filteredProducts = products.filter(
+                (item) => item.category === "Bread"
+            );
+
+            setAllProducts(filteredProducts);
         }
-    }, [category])
+    }, [category]);
     return (
         <Helmet title="Home">
             <section>
@@ -141,30 +157,30 @@ const Home = () => {
                             <div className="food__category d-flex align-items-center justify-content-center gap-4"
                             >
                                 <button className={`all__btn ${category === 'All' ? 'foodBtnActive' : ''}`} onClick={() => setCategory('All')}>
-                                    all
+                                    ALL
                                 </button>
                                 <button className={`d-flex align-items-center gap-2 ${category === 'BURGER' ? 'foodBtnActive' : ''}`} onClick={() => setCategory('BURGER')}>
                                     <img src={foodCategoryImg01} alt="" />
-                                    burger
+                                    BURGER
                                 </button>
                                 <button className={`d-flex align-items-center gap-2 ${category === 'PIZZA' ? 'foodBtnActive' : ''}`} onClick={() => setCategory('PIZZA')}>
                                     <img src={foodCategoryImg02} alt="" />
-                                    pizza
+                                    PIZZA
                                 </button>
                                 <button className={`d-flex align-items-center gap-2 ${category === 'BREAD' ? 'foodBtnActive' : ''}`} onClick={() => setCategory('BREAD')}>
                                     <img src={foodCategoryImg03} alt="" />
-                                    bread
+                                    BREAD
                                 </button>
+
+
+
                             </div>
                         </Col>
-                        {
-                            products.map(item =>
-                            (
-                                <Col lg='3' md='4' key={item.id} className="mt-5">
-                                    <ProductCard item={item} />
-                                </Col>
-                            ))
-                        }
+                        {allProducts.map((item) => (
+                            <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
+                                <ProductCard item={item} />
+                            </Col>
+                        ))}
 
                     </Row>
                 </Container>

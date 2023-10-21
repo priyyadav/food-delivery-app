@@ -12,7 +12,7 @@ import "../../styles/header.css";
 
 const nav__links = [
     {
-        display: "Hooome",
+        display: "Home",
         path: "/home",
     },
     {
