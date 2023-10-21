@@ -88,7 +88,7 @@ const Header = () => {
                             <span className="cart__badge">{totalQuantity}</span>
                         </span>
                         <span className="user">
-                            <Link to='/login'><i class="ri-user-line"></i></Link>
+                            <i class="ri-user-line"></i>
                         </span>
                         <span className="mobile__menu" onClick={toggleMenu}>
                             <i className="ri-menu-line"></i>
